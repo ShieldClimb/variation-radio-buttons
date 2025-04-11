@@ -39,6 +39,9 @@ ShieldClimb's **[Replace WooCommerce variation dropdowns with variation radio bu
 
 ## 📜 Changelog
 
+### v1.0.1
+- Updated: Tested up to WordPress 6.8 and WooCommerce 9.8.1
+
 ### v1.0.0
 - Initial release
 

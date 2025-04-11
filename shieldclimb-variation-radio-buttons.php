@@ -4,12 +4,12 @@
  * Plugin Name: ShieldClimb – Variation Radio Buttons with Price & Stock for WooCommerce
  * Plugin URI: https://shieldclimb.com/free-woocommerce-plugins/variation-radio-buttons/
  * Description: Replace WooCommerce variation dropdowns with variation radio buttons for better UX, faster selection, and higher conversions. No coding needed!
- * Version: 1.0.0
+ * Version: 1.0.1
  * Requires Plugins: woocommerce
  * Requires at least: 5.8
- * Tested up to: 6.7
+ * Tested up to: 6.8
  * WC requires at least: 5.8
- * WC tested up to: 9.7.1
+ * WC tested up to: 9.8.1
  * Requires PHP: 7.2
  * Author: shieldclimb.com
  * Author URI: https://shieldclimb.com/about-us/
