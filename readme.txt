@@ -4,7 +4,7 @@ Donate link: https://shieldclimb.com/
 Tags: WooCommerce variation radio buttons, WooCommerce product variations, WooCommerce plugin, Variation dropdowns alternative, Increase conversions WooCommerce
 Requires at least: 5.8
 Tested up to: 6.8
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Requires PHP: 7.2
 WC requires at least: 5.8
 WC tested up to: 9.8.1
@@ -31,10 +31,15 @@ See more via [this website](https://shieldclimb.com/free-woocommerce-plugins/var
 
 == Screenshots ==
 
-1. screenshot-1.png
-2. screenshot-2.png
+1. Before activate plugin
+2. After activate plugin (Light Theme)
+3. After activate plugin (Dark Theme)
 
 == ChangeLog ==
+
+= V1.0.2 =
+
+* **Updated**: Updated: Updated with wp_enqueue commands, improve js and css. Improved UX: full radio option clickability and light/dark theme adaptation.
 
 = V1.0.1 =
 

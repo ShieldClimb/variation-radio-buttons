@@ -1,0 +1,130 @@
+:root {
+    --sc-selection-border: #007cba;
+    --sc-selection-bg: rgba(0, 124, 186, 0.08);
+    --sc-selection-indicator: #007cba;
+    --sc-price-color: #007cba;
+    --sc-border-light: rgba(0, 0, 0, 0.1);
+    --sc-bg-light: rgba(0, 0, 0, 0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --sc-selection-border: #4da7db;
+        --sc-selection-bg: rgba(77, 167, 219, 0.15);
+        --sc-selection-indicator: #4da7db;
+        --sc-price-color: #4da7db;
+        --sc-border-light: rgba(255, 255, 255, 0.1);
+        --sc-bg-light: rgba(255, 255, 255, 0.05);
+    }
+}
+
+.variation-radio-container {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.variation-radio-option {
+    position: relative;
+    margin: 0.75rem 0;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 1px solid var(--sc-border-light);
+    border-radius: 4px;
+    background: var(--sc-bg-light);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.variation-radio-option.selected {
+    border-color: var(--sc-selection-border);
+    background: var(--sc-selection-bg);
+    box-shadow: 0 0 0 1px var(--sc-selection-border);
+}
+
+.variation-radio-option.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.variation-radio-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.variation-radio-option > label {
+    display: block;
+    cursor: pointer;
+}
+
+.option-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.option-text {
+    font-weight: 500;
+}
+
+.price-stock {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+.price {
+    font-weight: 600;
+    color: var(--sc-price-color);
+}
+
+.stock {
+    font-size: 0.85em;
+    opacity: 0.8;
+}
+
+.radio-indicator {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.variation-radio-option.selected .radio-indicator {
+    border-color: var(--sc-selection-indicator);
+}
+
+.variation-radio-option.selected .radio-indicator::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--sc-selection-indicator);
+}
+
+.variation-radio-option:focus-within {
+    outline: 2px solid var(--sc-selection-border);
+    outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+    .option-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .price-stock {
+        margin-left: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+}

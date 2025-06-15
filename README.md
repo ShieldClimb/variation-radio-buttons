@@ -31,13 +31,19 @@ ShieldClimb's **[Replace WooCommerce variation dropdowns with variation radio bu
 
 ## 📸 Screenshots
 
-### Before
+### Before activate plugin
 ![Before](https://shieldclimb.com/wp-content/uploads/2025/04/Screenshot-1.png)
 
-### After
-![After](https://shieldclimb.com/wp-content/uploads/2025/04/Screenshot-2.png)
+### After activate plugin (Light Theme)
+![After](https://shieldclimb.com/wp-content/uploads/2025/06/Screenshot-2.png)
+
+### After activate plugin (Dark Theme)
+![After](https://shieldclimb.com/wp-content/uploads/2025/06/Screenshot-3.png)
 
 ## 📜 Changelog
+
+### v1.0.2
+- Updated: Updated with wp_enqueue commands, improve js and css. Improved UX: full radio option clickability and light/dark theme adaptation.
 
 ### v1.0.1
 - Updated: Tested up to WordPress 6.8 and WooCommerce 9.8.1
