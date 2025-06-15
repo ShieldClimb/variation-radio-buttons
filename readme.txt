@@ -39,7 +39,7 @@ See more via [this website](https://shieldclimb.com/free-woocommerce-plugins/var
 
 = V1.0.2 =
 
-* **Updated**: Updated: Updated with wp_enqueue commands, improve js and css. Improved UX: full radio option clickability and light/dark theme adaptation.
+* **Updated**: Updated with wp_enqueue commands, improve js and css. Improved UX: full radio option clickability and light/dark theme adaptation.
 
 = V1.0.1 =
 
