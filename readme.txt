@@ -4,7 +4,7 @@ Donate link: https://shieldclimb.com/
 Tags: radio buttons, variation, variations, variations radio, woocommerce
 Requires at least: 5.8
 Tested up to: 6.8
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 Requires PHP: 7.2
 WC requires at least: 5.8
 WC tested up to: 9.8.1
@@ -23,11 +23,17 @@ This makes the shopping experience smoother and faster, encouraging more purchas
 
 See more via [this website](https://shieldclimb.com/free-woocommerce-plugins/variation-radio-buttons/).
 
+📺 **Watch the full install and setup tutorial here:**  
+[youtube https://www.youtube.com/watch?v=XLIqpgsstLM]
+
 == Installation ==
 
 1. Download our plugin from https://shieldclimb.com/free-woocommerce-plugins/variation-radio-buttons/
 2. At your WordPress admin, Go to Plugins > Add New Plugin > Upload Plugin > Choose File (Choose the file you downloaded just now) > Click Install
 3. Click Activate
+
+📺 **Watch the full install and setup tutorial here:**  
+[youtube https://www.youtube.com/watch?v=XLIqpgsstLM]
 
 == Screenshots ==
 
@@ -36,6 +42,11 @@ See more via [this website](https://shieldclimb.com/free-woocommerce-plugins/var
 3. After activate plugin (Dark Theme)
 
 == ChangeLog ==
+
+= V1.0.4 =
+
+* **Fixed**: Issue where variations show as out of stock when the parent product has stock management disabled.
+* **Updated**: Readme file to include tutorial video link.
 
 = V1.0.3 =
 

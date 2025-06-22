@@ -17,6 +17,10 @@ ShieldClimb's **[Replace WooCommerce variation dropdowns with variation radio bu
 1. **Upload and Install**: Upload the plugin and install it in WordPress.
 2. **Activate**: Click activate.
 
+## 📺 Watch the Full Install and Setup Tutorial Here:
+
+[![How to Install and Setup the Plugin](https://img.youtube.com/vi/XLIqpgsstLM/0.jpg)](https://www.youtube.com/watch?v=XLIqpgsstLM)
+
 ## 🔥 Features
 
 - **[Convert Variation Dropdowns to Radio Buttons](https://shieldclimb.com/free-woocommerce-plugins/variation-radio-buttons/)**: Improve UX and increase conversions.
@@ -41,6 +45,10 @@ ShieldClimb's **[Replace WooCommerce variation dropdowns with variation radio bu
 ![After](https://shieldclimb.com/wp-content/uploads/2025/06/Screenshot-3.png)
 
 ## 📜 Changelog
+
+### v1.0.4
+- Fixed: Issue where variations show as out of stock when the parent product has stock management disabled.
+- Updated: Readme file to include tutorial video link.
 
 ### v1.0.3
 - Fixed: Strike price/sale price order in Blocksy theme & font size inconsistency in Kadence theme.
