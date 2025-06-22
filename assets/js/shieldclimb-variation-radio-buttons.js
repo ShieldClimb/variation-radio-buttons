@@ -71,7 +71,34 @@ document.addEventListener('DOMContentLoaded', function() {
             // Create price element
             const priceSpan = document.createElement('span');
             priceSpan.className = 'price';
-            priceSpan.innerHTML = priceHTML || '';
+            
+            // Create a container for price HTML
+            const priceContainer = document.createElement('span');
+            priceContainer.className = 'price-container';
+            
+            // FIX FOR BLOCKSY: Reorder prices if needed
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = priceHTML || '';
+            
+            // Check if we have both del and ins elements
+            const delElement = tempDiv.querySelector('del');
+            const insElement = tempDiv.querySelector('ins');
+            
+            if (delElement && insElement) {
+                // Create new container for properly ordered prices
+                const orderedContainer = document.createElement('span');
+                
+                // Add strike price first
+                orderedContainer.appendChild(delElement.cloneNode(true));
+                
+                // Then add sale price
+                orderedContainer.appendChild(insElement.cloneNode(true));
+                
+                priceContainer.appendChild(orderedContainer);
+            } else {
+                // Use original HTML if not both elements
+                priceContainer.innerHTML = priceHTML || '';
+            }
             
             // Create stock element
             const stockSpan = document.createElement('span');
@@ -79,13 +106,14 @@ document.addEventListener('DOMContentLoaded', function() {
             stockSpan.textContent = stockQty > 0 ? `(${stockQty} in stock)` : '(Out of stock)';
             
             // Assemble elements
+            priceSpan.appendChild(priceContainer);
             priceStock.appendChild(priceSpan);
             priceStock.appendChild(stockSpan);
             content.appendChild(textSpan);
             content.appendChild(priceStock);
             label.appendChild(content);
             container.appendChild(radio);
-            container.appendChild(radioIndicator); // Radio indicator added here
+            container.appendChild(radioIndicator);
             container.appendChild(label);
             wrapper.appendChild(container);
             

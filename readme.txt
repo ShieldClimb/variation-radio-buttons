@@ -1,10 +1,10 @@
 === ShieldClimb – Variation Radio Buttons with Price & Stock for WooCommerce ===
 Contributors: shieldclimb
 Donate link: https://shieldclimb.com/
-Tags: WooCommerce variation radio buttons, WooCommerce product variations, WooCommerce plugin, Variation dropdowns alternative, Increase conversions WooCommerce
+Tags: radio buttons, variation, variations, variations radio, woocommerce
 Requires at least: 5.8
 Tested up to: 6.8
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Requires PHP: 7.2
 WC requires at least: 5.8
 WC tested up to: 9.8.1
@@ -36,6 +36,11 @@ See more via [this website](https://shieldclimb.com/free-woocommerce-plugins/var
 3. After activate plugin (Dark Theme)
 
 == ChangeLog ==
+
+= V1.0.3 =
+
+* **Fixed**: Strike price/sale price order in Blocksy theme & font size inconsistency in Kadence theme.
+* **Improved**: Vertical centering for radio buttons.
 
 = V1.0.2 =
 

@@ -42,6 +42,10 @@ ShieldClimb's **[Replace WooCommerce variation dropdowns with variation radio bu
 
 ## 📜 Changelog
 
+### v1.0.3
+- Fixed: Strike price/sale price order in Blocksy theme & font size inconsistency in Kadence theme.
+- Improved: Vertical centering for radio buttons.
+
 ### v1.0.2
 - Updated: Updated with wp_enqueue commands, improve js and css. Improved UX: full radio option clickability and light/dark theme adaptation.
 

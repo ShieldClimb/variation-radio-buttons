@@ -1,10 +1,11 @@
+/* Universal Theme-Compatible Styles */
 :root {
     --sc-selection-border: #007cba;
     --sc-selection-bg: rgba(0, 124, 186, 0.08);
     --sc-selection-indicator: #007cba;
-    --sc-price-color: #007cba;
     --sc-border-light: rgba(0, 0, 0, 0.1);
     --sc-bg-light: rgba(0, 0, 0, 0.02);
+    --sc-text-color: inherit;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,7 +13,6 @@
         --sc-selection-border: #4da7db;
         --sc-selection-bg: rgba(77, 167, 219, 0.15);
         --sc-selection-indicator: #4da7db;
-        --sc-price-color: #4da7db;
         --sc-border-light: rgba(255, 255, 255, 0.1);
         --sc-bg-light: rgba(255, 255, 255, 0.05);
     }
@@ -32,6 +32,11 @@
     background: var(--sc-bg-light);
     transition: all 0.2s ease;
     cursor: pointer;
+    color: var(--sc-text-color);
+    /* Ensure consistent height */
+    min-height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 .variation-radio-option.selected {
@@ -55,6 +60,7 @@
 .variation-radio-option > label {
     display: block;
     cursor: pointer;
+    width: 100%;
 }
 
 .option-content {
@@ -63,6 +69,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
+    width: 100%;
 }
 
 .option-text {
@@ -73,21 +80,52 @@
     display: flex;
     gap: 0.5rem;
     margin-left: auto;
+    /* Ensure consistent font size */
+    font-size: 0.95em;
 }
 
-.price {
+/* ===== PRICE STYLING FIXES ===== */
+/* All prices inherit from product page */
+.price-container,
+.price-container * {
+    color: inherit !important;
+    /* Fix font size consistency */
+    font-size: inherit !important;
+}
+
+/* Regular price styling */
+.price-container .amount {
     font-weight: 600;
-    color: var(--sc-price-color);
 }
 
+/* Strike price styling */
+.price-container del {
+    opacity: 0.7;
+    margin-right: 5px;
+}
+
+.price-container del .amount {
+    text-decoration: line-through !important;
+}
+
+/* Sale price styling */
+.price-container ins {
+    text-decoration: none !important;
+}
+
+/* Stock text styling - same as price color */
 .stock {
-    font-size: 0.85em;
+    font-size: inherit;
+    color: inherit !important;
     opacity: 0.8;
 }
+/* ===== END PRICE FIXES ===== */
 
+/* RADIO VERTICAL CENTERING */
 .radio-indicator {
     position: absolute;
-    top: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
     left: 1rem;
     width: 18px;
     height: 18px;
@@ -126,5 +164,12 @@
         margin-left: 0;
         width: 100%;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .price-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
     }
 }
