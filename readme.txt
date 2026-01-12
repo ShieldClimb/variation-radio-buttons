@@ -1,13 +1,13 @@
 === ShieldClimb – Variation Radio Buttons with Price & Stock for WooCommerce ===
 Contributors: shieldclimb
-Donate link: https://shieldclimb.com/
+Donate link: https://shieldclimb.com/product/donate-now/
 Tags: radio buttons, variation, variations, variations radio, woocommerce
 Requires at least: 5.8
-Tested up to: 6.8
-Stable tag: 1.0.4
+Tested up to: 6.9
+Stable tag: 1.0.5
 Requires PHP: 7.2
 WC requires at least: 5.8
-WC tested up to: 9.8.1
+WC tested up to: 10.4.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
@@ -42,6 +42,10 @@ See more via [this website](https://shieldclimb.com/free-woocommerce-plugins/var
 3. After activate plugin (Dark Theme)
 
 == ChangeLog ==
+
+= V1.0.5 =
+
+* **Updated**: Tested up to WordPress 6.9 and WooCommerce 10.4.3
 
 = V1.0.4 =
 
