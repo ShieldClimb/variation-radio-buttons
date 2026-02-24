@@ -46,6 +46,10 @@ ShieldClimb's **[Replace WooCommerce variation dropdowns with variation radio bu
 
 ## 📜 Changelog
 
+### v1.0.6
+- Fixed: Added full compatibility with WooCommerce High-Performance Order Storage (HPOS) and Cart & Checkout Blocks. This ensures smooth operation and removes any warnings on stores using the latest WooCommerce features
+- Updated: Tested up to WooCommerce 10.5.2
+
 ### v1.0.5
 - Updated: Tested up to WordPress 6.9 and WooCommerce 10.4.3
 
